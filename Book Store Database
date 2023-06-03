@@ -1,0 +1,17 @@
+CREATE TABLE Bookstore (name TEXT, id integer, author_name text, price integer, rating integer); 
+Insert into Bookstore values ("Lord of the Rings", 1.001, "JRR Tolkien", 50, 5);
+Insert into Bookstore values ("The Body is not an Apology", 1.002, "Sonya Renee Taylor", 18.99, 4);
+Insert into Bookstore values ("The Light We Carry", 1.003, "Michelle Obama", 22.99, 5);
+Insert into Bookstore values ("Finish: The Gift of Done", 1.004, "Jon Acuff", 10.99, 2);
+Insert into Bookstore values ("Alexander Hamilton", 1.005, "Ron Chernow", 31.99, 4);
+Insert into Bookstore values ("How to be Antiracist", 1.006, "Ibram X Kendi", 30.50, 5);
+Insert into Bookstore values ("Zealot: The Life and Times of Jesus of Nazareth", 1.007, "Reza Aslan", 27.99, 3);
+Insert into Bookstore values ("The Unlikely Pilgrimage of Harold Fry", 1.010, "Rachel Joyce", 21.50, 4);
+Insert into Bookstore values ("The Kite Runner", 1.020, "Khaled Hosseini", 27.99, 5);
+Insert into Bookstore values ("Crazy Rich Asians", 1.030, "Kevin Kwan", 15.50, 1);
+Insert into Bookstore values ("Neon Gods", 1.011, "Katee Robert", 9.50, 1);
+Insert into Bookstore values ("The Complete Stories and Poems", 1.012, "Edgar Allen Poe", 49.50, 5);
+Insert into Bookstore values ("I Know Why the Caged Bird Sings", 1.013, "Maya Angelou", 19.50, 5);
+Insert into Bookstore values ("Atlas Shrugged", 1.014, "Ayn Rand", 0.50, 1);
+Insert into Bookstore values ("Their Eyes Were Watching God", 1.015, "Zore Neale Hurston", 21.50, 5);
+select * from Bookstore where rating > 3 order by price; 
