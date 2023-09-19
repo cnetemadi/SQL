@@ -1,0 +1,25 @@
+select* from superstore;
+order by price;
+
+select sum(price) from superstore; 
+
+select avg(price) from superstore; 
+
+select sum(stock_quantity) from superstore; 
+
+select avg(average_rating) from superstore; 
+
+select max(price) from superstore; 
+
+select min(price) from superstore; 
+
+select* from superstore
+where category = "Kitchen Supplies"
+
+select max(price) 
+from superstore
+where category = "Kitchen Supplies";
+
+select * from superstore 
+where average_rating > 4.4
+and category = "Kitchen Supplies";
