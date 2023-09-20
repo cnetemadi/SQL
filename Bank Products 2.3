@@ -1,0 +1,15 @@
+1. Select all the bank product names so we know what our options are. 
+select product_name from bank_products
+
+2. Write another query that uses OR to show the product names that have a Checking OR Savings product type.
+select product_name 
+from bank_products
+where product_type = "Checking" 
+or product_type = "Savings"; 
+
+3. Write another query that uses AND to show the product names that have a "Savings" product type AND have an interest_rate of at least 0.75, AND have no monthly fee
+select product_name
+from bank_products 
+where product_type = "Savings" 
+and interest_rate >= .75
+and monthly_fee = 0;
