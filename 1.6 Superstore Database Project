@@ -1,0 +1,25 @@
+SELECT *
+FROM superstore
+LIMIT 5
+;
+
+
+--order the itmes by price
+SELECT* 
+FROM superstore
+ORDER BY price asc;
+
+--aggregate the stock quantity of all items with a rating higher than 4.60
+select sum(stock_quantity)
+from superstore
+where average_rating > 4.60;
+
+--How many air purifiers currently in stock? 
+
+select stock_quantity
+from superstore
+where item_name = "Air Purifier";
+--what is the average price of items in the kitchen supplies category? 
+select avg(price)
+from superstore
+where category = "Kitchen Supplies"; 
